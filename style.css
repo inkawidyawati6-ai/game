@@ -1,0 +1,104 @@
+/* Pengaturan Umum */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kontainer Utama Game */
+.game-container {
+    background-color: #1e293b;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.status-bar {
+    background-color: #334155;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+.status-bar strong {
+    color: #34d399;
+}
+
+/* Kotak Cerita */
+#story-box {
+    background-color: #0f172a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #38bdf8;
+}
+
+#story-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Kotak Tombol Pilihan */
+#choices-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.choice-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.choice-btn:active {
+    transform: translateY(0);
+}
